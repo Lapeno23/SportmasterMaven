@@ -10,7 +10,7 @@ class BonusServiceTest {
     void calculateBonus() {
         BonusService bonusService = new BonusService();
         assertEquals("Silver card", "Silver card");
-        assertEquals(10_430, bonusService.calculateBonus(149_000,1));
+        assertEquals(1050, bonusService.calculateBonus(15_000,45_000));
         assertEquals("Blue card", "Blue card");
         assertEquals(500, bonusService.calculateBonus(10_000, 4_000));
         assertEquals("Gold card", "Gold card");
