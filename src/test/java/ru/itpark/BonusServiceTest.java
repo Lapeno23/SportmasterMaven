@@ -15,5 +15,6 @@ class BonusServiceTest {
         assertEquals(500, bonusService.calculateBonus(10_000, 4_000));
         assertEquals("Gold card", "Gold card");
         assertEquals(15_000, bonusService.calculateBonus(150_000, 40_000));
+        assertEquals(0,bonusService.calculateBonus(0,0));
     }
 }
