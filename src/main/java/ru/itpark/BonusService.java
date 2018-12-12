@@ -8,9 +8,9 @@ public class BonusService {
         int goldLevelBonus = 100;
         int minPurchaseAmountForBonus = 1000;
         int maxHistoryTotalAmountForBlue = 15_000;
-        int minPurchaseAmountForSilverBonus = 15_001;
+        int minPurchaseAmountForSilverBonus = maxHistoryTotalAmountForBlue + 1;
         int maxHistoryTotalAmountForSilver = 150_000;
-        int minPurchaseAmountForGold = 150_001;
+        int minPurchaseAmountForGold = maxHistoryTotalAmountForSilver + 1;
         int purchaseSum = purchaseAmount + historyTotalAmount;
         int bonusIndex = purchaseAmount / minPurchaseAmountForBonus;
 
