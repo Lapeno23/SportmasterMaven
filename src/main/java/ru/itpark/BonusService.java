@@ -17,10 +17,12 @@ public class BonusService {
         if (purchaseSum >= minPurchaseAmountForBonus && purchaseSum <= maxHistoryTotalAmountForBlue) {
             System.out.println("Blue card");
             return bonusIndex * blueLevelBonus;
-        } else if (purchaseSum >= minPurchaseAmountForSilverBonus && purchaseSum <= maxHistoryTotalAmountForSilver) {
+        }
+        if (purchaseSum >= minPurchaseAmountForSilverBonus && purchaseSum <= maxHistoryTotalAmountForSilver) {
             System.out.println("Silver card");
             return bonusIndex * silverLevelBonus;
-        } else if (purchaseSum >= minPurchaseAmountForGold) {
+        }
+        if (purchaseSum >= minPurchaseAmountForGold) {
             System.out.println("Gold card");
             return bonusIndex * goldLevelBonus;
         }
